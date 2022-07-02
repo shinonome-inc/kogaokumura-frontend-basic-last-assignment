@@ -1,8 +1,8 @@
 @use "../../variables" as*;
 
 .assignment-button{
-    color: $color-button;
-font-size:$fontsize-button;
+  $color-button: #ff0000;
+$fontsize-button: 16px;
 }
 .box{
 display: flex;
