@@ -1,26 +1,24 @@
 @use "../../variables" as*;
 
-.button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; 
-    width: 200px;
+.button {
+  display: inline-block;
+  text-align: center;
+  background-color: $black;
+  color: $white;
+  transition: background-color 0.2s;
+  @media screen and(max-width:$breakpoint-lg) {
+    width: 150px;
     height: 55px;
-    background-color: $black;
-    color: $white;
-    transition: background-color 0.2s;
-    @media screen and(max-width:$breakpoint-lg){
-        width: 150px;
-        height: 55px;
-      }
-    @media screen and(max-width:$breakpoint-md){
-          width: 180px;
-          height: 45px;
-      }
-      &:hover{
-          color:white;
-          background-color: $orange_bistre;
-          text-decoration: none;
-        }
-    }
+    line-height: 3.4em;
+  }
+  @media screen and(max-width:$breakpoint-md) {
+    width: 180px;
+    height: 45px;
+    line-height: 2.8em;
+  }
+  &:hover {
+    color: white;
+    background-color: $orange_bistre;
+    text-decoration: none;
+  }
+}
