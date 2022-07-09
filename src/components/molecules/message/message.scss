@@ -1,0 +1,31 @@
+@use "../../variables" as *;
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 52px 20px;
+  @media screen and (max-width: $breakpoint-md) {
+    display: flex;
+    padding: 32px 20px;
+  }
+  & > h1 {
+    padding: 0px 0px 10px 0px;
+    font-size: $fontsize-xl;
+    color: $black;
+    font-family: $fontfamily-mincho;
+    @media screen and (max-width: $breakpoint-md) {
+      display: flex;
+      font-size: $fontsize-l;
+    }
+  }
+  & > h2 {
+    font-size: $fontsize-m;
+    color: $black;
+    font-family: $fontfamily-gothic;
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: $fontsize-xs;
+    }
+  }
+}
