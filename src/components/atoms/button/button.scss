@@ -6,15 +6,19 @@
   background-color: $black;
   color: $white;
   transition: background-color 0.2s;
+  width: 200px;
+  height: 55px;
+  line-height: 3.8em;
+  font-size: $fontsize-s;
   @media screen and(max-width:$breakpoint-lg) {
     width: 150px;
     height: 55px;
-    line-height: 3.5em;
+    line-height: 3.8em;
   }
   @media screen and(max-width:$breakpoint-md) {
     width: 180px;
     height: 45px;
-    line-height: 2.8em;
+    line-height: 3.1em;
   }
   &:hover {
     color: white;
