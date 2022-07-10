@@ -1,11 +1,11 @@
 @use "../../variables" as *;
 .card {
   position: relative;
-  border: 0 !important;
-  border-radius: 0 !important;
-  overflow: hidden;
+  border: 0;
+  border-radius: 0;
 }
-.card-triangle-wrap {
+
+.card-triangle {
   position: absolute;
   z-index: 1;
   border-right: 150px solid transparent;
@@ -18,11 +18,11 @@
   font-weight: 700;
   font-size: $fontsize-l;
   color: $orange_bistre;
-  margin-left: 4px;
+  margin-left: 6px;
 }
 
 .card-img-top {
-  border-radius: 0 !important;
+  border-radius: 0;
 }
 
 .card-body {
