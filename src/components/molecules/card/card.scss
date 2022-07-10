@@ -1,26 +1,26 @@
 @use "../../variables" as *;
 .card {
   overflow: hidden;
-}
 
-.card-triangle {
-  position: absolute;
-  z-index: 1;
-  border-right: 150px solid transparent;
-  border-top: 150px solid $white;
-}
+  .triangle {
+    position: absolute;
+    z-index: 1;
+    border-right: 150px solid transparent;
+    border-top: 150px solid $white;
+  }
 
-.card-triangle-text {
-  position: absolute;
-  z-index: 2;
-  font-weight: 700;
-  font-size: $fontsize-l;
-  color: $orange_bistre;
-  margin-left: 6px;
-}
+  .text {
+    position: absolute;
+    z-index: 2;
+    font-weight: 700;
+    font-size: $fontsize-l;
+    color: $orange_bistre;
+    margin-left: 6px;
+  }
 
-.card-img-top {
-  border-radius: 0;
+  .img-top {
+    border-radius: 0;
+  }
 }
 
 .card-body {
@@ -29,11 +29,11 @@
   flex-direction: column;
   background-color: $white_smoke;
   padding: 32px;
-}
 
-.card-text {
-  font-size: $fontsize-s;
-  margin-bottom: 30px;
+  .card-text {
+    font-size: $fontsize-s;
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: $breakpoint-md) {
