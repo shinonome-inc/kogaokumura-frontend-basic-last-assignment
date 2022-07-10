@@ -1,8 +1,6 @@
 @use "../../variables" as *;
 .card {
-  position: relative;
-  border: 0;
-  border-radius: 0;
+  overflow: hidden;
 }
 
 .card-triangle {
