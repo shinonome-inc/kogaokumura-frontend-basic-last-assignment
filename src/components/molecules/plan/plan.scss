@@ -1,0 +1,62 @@
+@use "../../variables" as *;
+.each-plan {
+  margin-bottom: 24px;
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 40px;
+  }
+
+  .plan-name {
+    text-align: center;
+    padding: 20px;
+    color: $white;
+    font-size: $fontsize-l;
+    font-weight: 700;
+
+    background-color: $orange_zorba;
+  }
+  &:nth-child(2n) {
+    border: 5px solid $orange_bistre;
+    .plan-name {
+      padding-top: 15px;
+      background-color: $orange_bistre;
+    }
+  }
+
+  .plan-body {
+    border: 1px solid $gray_gainsboro;
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+
+    .plan-price {
+      text-align: center;
+      padding: 24px;
+      background-color: $gray_desertStorm;
+
+      .each-price {
+        color: $orange_bistre;
+        font-size: $fontsize-xxl;
+        font-weight: 700;
+        &::before {
+          content: "￥";
+          font-size: $fontsize-l;
+        }
+      }
+
+      .plan-getsugaku {
+        font-size: $fontsize-s;
+      }
+    }
+  }
+
+  .plan-menu {
+    text-align: center;
+    padding: 20px;
+    font-size: $fontsize-m;
+    border-top: 1px solid $gray_gainsboro;
+    list-style: none;
+    &:last-child {
+      padding-bottom: 20px;
+    }
+  }
+}
