@@ -8,7 +8,6 @@
     border-right: 150px solid transparent;
     border-top: 150px solid $white;
   }
-
   .text {
     position: absolute;
     z-index: 2;
@@ -17,10 +16,9 @@
     color: $orange_bistre;
     margin-left: 6px;
   }
-
-  .img-top {
-    border-radius: 0;
-  }
+}
+.card-img-top {
+  border-radius: 0;
 }
 
 .card-body {
