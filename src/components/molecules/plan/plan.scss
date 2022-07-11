@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 .each-plan {
   margin-bottom: 24px;
-  @media screen and (min-width: $breakpoint-md) {
+  @media screen and (max-width: $breakpoint-md) {
     margin-bottom: 40px;
   }
 
