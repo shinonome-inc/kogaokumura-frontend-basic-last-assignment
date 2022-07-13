@@ -11,7 +11,6 @@
     color: $white;
     font-size: $fontsize-l;
     font-weight: 700;
-
     background-color: $orange_zorba;
   }
   &:nth-child(2n) {
@@ -19,6 +18,11 @@
     .name {
       padding-top: 15px;
       background-color: $orange_bistre;
+    }
+    .menu {
+      &:last-child {
+        padding-bottom: 15px;
+      }
     }
   }
 
@@ -55,8 +59,5 @@
     font-size: $fontsize-m;
     border-top: 1px solid $gray_gainsboro;
     list-style: none;
-    &:last-child {
-      padding-bottom: 20px;
-    }
   }
 }
