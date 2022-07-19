@@ -1,11 +1,13 @@
 @use "../../variables" as *;
-.body {
+.plan {
+  display: inline-block;
   text-align: center;
   margin-bottom: 24px;
   @media screen and (max-width: $breakpoint-md) {
     margin-bottom: 40px;
   }
   border: 1px solid $gray_gainsboro;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -20,12 +22,12 @@
   &:nth-child(2n) {
     border: 5px solid $orange_bistre;
     .name {
-      padding-top: 15px;
+      padding-top: 16px;
       background-color: $orange_bistre;
     }
     .menu {
       &:last-child {
-        padding-bottom: 15px;
+        padding-bottom: 16px;
       }
     }
   }
@@ -44,8 +46,8 @@
       }
     }
 
-    .getsugaku {
-      padding-top: 16px;
+    .monthly {
+      margin-top: 16px;
       font-size: $fontsize-s;
     }
   }
