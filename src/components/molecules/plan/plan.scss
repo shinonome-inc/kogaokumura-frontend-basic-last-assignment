@@ -1,5 +1,6 @@
 @use "../../variables" as *;
 .plan {
+  display: inline-block;
   text-align: center;
   margin-bottom: 24px;
   @media screen and (max-width: $breakpoint-md) {
@@ -52,10 +53,11 @@
   }
 
   .menu {
-    border: 1px solid $gray_gainsboro;
+    border-right: 1px solid $gray_gainsboro;
+    border-left: 1px solid $gray_gainsboro;
+    border-bottom: 1px solid $gray_gainsboro;
     padding: 20px;
     font-size: $fontsize-m;
-    border-top: 1px solid $gray_gainsboro;
     list-style: none;
   }
 }
