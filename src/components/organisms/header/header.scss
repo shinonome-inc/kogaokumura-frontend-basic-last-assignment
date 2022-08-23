@@ -1,0 +1,114 @@
+@use "../../variables" as *;
+.navbar-back {
+  background-color: $black;
+  padding: 0px;
+  @media screen and (min-width: $breakpoint-xl) {
+    background-color: $black_50;
+  }
+}
+.navbar {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  button {
+    outline: none;
+  }
+  .navbar-toggler {
+    padding: 4px 16px;
+  }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      padding-left: 16px;
+      @media screen and (min-width: $breakpoint-xl) {
+        padding-left: 30px;
+      }
+      & img {
+        width: 120px;
+        @media screen and (min-width: $breakpoint-xl) {
+          width: 140px;
+        }
+      }
+    }
+  }
+  #navbarNavDropdown {
+    width: 100%;
+    @media screen and (min-width: $breakpoint-xl) {
+      width: auto;
+      display: flex;
+    }
+
+    .header-wrapper {
+      width: 100%;
+      @media screen and (min-width: $breakpoint-xl) {
+        display: flex;
+        padding-right: 50px;
+      }
+      .nav-textstyle {
+        display: block;
+        padding: 15px 0px 15px 16px;
+        color: $white;
+        font-size: $fontsize-s;
+        &:hover {
+          color: $white;
+        }
+        @media screen and (min-width: $breakpoint-xl) {
+          padding: 35px 20px;
+          transition: 0.2s ease;
+          &:hover {
+            color: $gray_nobel;
+          }
+        }
+      }
+    }
+    .concept-top {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      .header-plus {
+        margin-left: auto;
+      }
+    }
+
+    .concept {
+      position: relative;
+      @media screen and (min-width: $breakpoint-xl) {
+        ul {
+          visibility: hidden;
+          transition: 0.2s ease;
+          position: absolute;
+          left: -5px;
+        }
+        &:hover > ul {
+          display: block;
+          visibility: visible;
+        }
+      }
+      .concept-dropdown {
+        list-style-type: none;
+        .dropdown-style {
+          display: block;
+          text-decoration: none;
+          color: $white;
+          padding: 15px 0px 15px 28px;
+          @media screen and (min-width: $breakpoint-xl) {
+            width: 220px;
+            background-color: $black;
+            padding: 18px 0px 18px 18px;
+            transition: 0.2s ease;
+            &:hover {
+              background-color: $orange_bistre;
+            }
+          }
+        }
+      }
+    }
+  }
+}
