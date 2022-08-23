@@ -1,0 +1,46 @@
+@use "../../variables" as *;
+.top {
+  margin-bottom: 32px;
+  .top-image-wrapper {
+    height: 360px;
+    background-image: url("../../../img/top-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h2 {
+    color: $white;
+    font-size: $fontsize-l;
+    font-family: $fontfamily-mincho;
+    writing-mode: vertical-rl;
+    margin: 0;
+  }
+  .top-text-wrapper {
+    background-color: $black;
+    color: $white;
+    .message {
+      padding: 34px 20px 33px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .top {
+    margin-bottom: 30px;
+    .top-image-wrapper {
+      height: 700px;
+      h2 {
+        font-size: $fontsize-xl;
+      }
+    }
+    .top-text-wrapper {
+      .message {
+        padding: 52px 50px 74px;
+      }
+    }
+  }
+}
