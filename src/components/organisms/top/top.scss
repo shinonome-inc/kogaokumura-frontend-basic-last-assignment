@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 .top {
   margin-bottom: 32px;
+  color: $white;
   .top-image-wrapper {
     height: 360px;
     background-image: url("../../../img/top-image.png");
@@ -11,18 +12,17 @@
     justify-content: center;
     align-items: center;
   }
-
-  .h2 {
-    color: $white;
-    font-size: $fontsize-l;
-    font-family: $fontfamily-mincho;
-    writing-mode: vertical-rl;
-    margin: 0;
-  }
   .top-text-wrapper {
     background-color: $black;
     color: $white;
+    .top-text {
+      font-size: $fontsize-l;
+      font-family: $fontfamily-mincho;
+      margin: 0;
+      color: $white;
+    }
     .message {
+      font-size: $fontsize-s;
       padding: 34px 20px 33px;
     }
   }
@@ -33,7 +33,7 @@
     margin-bottom: 30px;
     .top-image-wrapper {
       height: 700px;
-      h2 {
+      .top-text {
         font-size: $fontsize-xl;
       }
     }
