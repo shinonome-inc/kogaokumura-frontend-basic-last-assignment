@@ -1,9 +1,10 @@
 @use "../../variables" as *;
 .top {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
+  width: 992px;
+
   color: $white;
   .top-image-wrapper {
-    height: 360px;
     background-image: url("../../../img/top-image.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -11,26 +12,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 360px;
+    .top-text {
+      font-size: $fontsize-l;
+      writing-mode: vertical-rl;
+    }
   }
   .top-text-wrapper {
+    height: 211px;
     background-color: $black;
     color: $white;
+    text-align: center;
     .top-text {
       font-size: $fontsize-l;
       font-family: $fontfamily-mincho;
-      margin: 0;
+      font-weight: 400;
+      line-height: 29px;
       color: $white;
     }
     .message {
       font-size: $fontsize-s;
-      padding: 34px 20px 33px;
+      padding: 32px 161px;
     }
   }
 }
 
 @media (min-width: $breakpoint-lg) {
   .top {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     .top-image-wrapper {
       height: 700px;
       .top-text {
@@ -38,8 +47,14 @@
       }
     }
     .top-text-wrapper {
+      height: 316px;
       .message {
-        padding: 52px 50px 74px;
+        padding: 52px 36px 74px;
+        .top-text {
+          font-size: $fontsize-xl;
+          line-height: 54px;
+          width: 893px;
+        }
       }
     }
   }
