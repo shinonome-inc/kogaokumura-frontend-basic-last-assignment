@@ -1,5 +1,7 @@
 @use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
 .about {
+  width: 720px;
   margin-bottom: 40px;
   background-color: $white;
   .about-img-wrapper {
@@ -10,23 +12,25 @@
     }
   }
   .message {
-    text-align: center;
     padding: 32px 24px;
-    font-size: $fontsize-s;
     background-color: $white_smoke;
+    line-height: 28px;
     h2 {
-      font-size: $fontsize-l;
+      line-height: 30px;
       color: $orange_bistre;
     }
   }
 }
 @media (min-width: $breakpoint-lg) {
   .about {
+    width: 960px;
     padding: 0 16px 100px;
     .message {
-      padding: 52px 27px;
+      padding: 52px 20px;
+      line-height: 36px;
+      height: 312px;
       h2 {
-        font-size: $fontsize-xl;
+        line-height: 36px;
       }
     }
   }
