@@ -5,27 +5,23 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  padding: 52px 20px;
-  @media screen and (max-width: $breakpoint-md) {
-    display: flex;
-    padding: 32px 20px;
+  padding: 32px 20px;
+  @media screen and (min-width: $breakpoint-lg) {
+    padding: 52px 20px;
   }
   & > h2 {
     padding-bottom: 10px;
-    font-size: $fontsize-xl;
+    font-size: $fontsize-l;
     color: $black;
     font-family: $fontfamily-mincho;
-    @media screen and (max-width: $breakpoint-md) {
+    @media screen and (min-width: $breakpoint-lg) {
       display: flex;
-      font-size: $fontsize-l;
+      font-size: $fontsize-xl;
     }
   }
   & > p {
-    font-size: $fontsize-m;
+    font-size: $fontsize-s;
     color: $black;
     font-family: $fontfamily-gothic;
-    @media screen and (max-width: $breakpoint-md) {
-      font-size: $fontsize-xs;
-    }
   }
 }
