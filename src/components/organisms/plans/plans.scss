@@ -1,0 +1,9 @@
+@use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
+.plans {
+  .message {
+    h2 {
+      color: $orange_bistre;
+    }
+  }
+}
