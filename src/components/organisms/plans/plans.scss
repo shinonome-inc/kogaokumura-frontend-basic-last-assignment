@@ -2,8 +2,15 @@
 @use "../../molecules/message/message.scss" as *;
 .plans {
   .message {
+    padding: 0px 41px 32px;
     h2 {
       color: $orange_bistre;
     }
+  }
+  .plan {
+    margin: 0px 15px 24px;
+  }
+  .message {
+    padding-top: 25px;
   }
 }
