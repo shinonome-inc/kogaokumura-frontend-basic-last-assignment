@@ -1,8 +1,6 @@
 @use "../../variables" as *;
 @use "../../molecules/message/message.scss" as *;
 .about {
-  width: 720px;
-  margin-bottom: 40px;
   background-color: $white;
   .about-img-wrapper {
     .about-img {
@@ -23,12 +21,10 @@
 }
 @media (min-width: $breakpoint-lg) {
   .about {
-    width: 960px;
     padding: 0 16px 100px;
     .message {
       padding: 52px 20px;
       line-height: 36px;
-      height: 312px;
       h2 {
         line-height: 36px;
       }
