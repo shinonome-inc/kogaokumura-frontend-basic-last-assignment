@@ -1,7 +1,6 @@
 @use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
 .top {
-  padding-bottom: 32px;
-  width: 991px;
   .top-image-wrapper {
     background-image: url("../../../img/top-image.png");
     background-position: center;
@@ -22,19 +21,14 @@
     background-color: $black;
     text-align: center;
     .message {
-      padding: 32px 161px;
+      padding: 32px 45px;
       line-height: 28px;
       h2 {
-        font-size: $fontsize-l;
-        font-family: $fontfamily-mincho;
-        font-weight: 400;
         color: $white;
-        padding-bottom: 6px;
         margin: 0;
       }
       p {
         color: $white;
-        font-size: $fontsize-s;
       }
     }
   }
@@ -42,8 +36,6 @@
 
 @media (min-width: $breakpoint-lg) {
   .top {
-    width: 992px;
-    padding-bottom: 30px;
     .top-image-wrapper {
       height: 700px;
       h2 {
@@ -55,10 +47,6 @@
       .message {
         padding: 52px 36px 74px;
         line-height: 54px;
-        h2 {
-          font-size: $fontsize-xl;
-          width: 893px;
-        }
       }
     }
   }
