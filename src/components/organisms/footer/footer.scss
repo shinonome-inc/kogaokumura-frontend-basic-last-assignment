@@ -16,7 +16,7 @@ footer {
       margin: 20px 0;
       text-align: center;
       line-height: 28px;
-      font-family: $fontfamily-mincho;
+      font-family: $fontfamily-gothic;
     }
     .icons {
       display: grid;
@@ -44,7 +44,7 @@ footer {
       gap: 8px;
       padding: 0px;
       margin-bottom: 0px;
-      font-family: $fontfamily-mincho;
+      font-family: $fontfamily-gothic;
       @media screen and (min-width: $breakpoint-md) {
         display: flex;
         justify-content: center;
@@ -77,6 +77,6 @@ footer {
     padding: 16px;
     text-align: center;
     line-height: 12px;
-    font-family: $fontfamily-mincho;
+    font-family: $fontfamily-gothic;
   }
 }
