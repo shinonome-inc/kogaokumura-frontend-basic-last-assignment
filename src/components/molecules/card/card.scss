@@ -37,6 +37,9 @@
       margin: 0px;
     }
   }
+  .button {
+    margin-bottom: 32px;
+  }
 
   @media screen and (min-width: $breakpoint-lg) {
     .card-img-top {
