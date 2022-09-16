@@ -41,7 +41,6 @@ footer {
     .footer-wrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
       padding: 0px;
       margin-bottom: 0px;
       font-family: $fontfamily-gothic;
@@ -56,13 +55,16 @@ footer {
           text-decoration: none;
           color: $black;
           transition: color 0.2s ease;
+          &:hover {
+            color: $orange_bistre;
+          }
           @media screen and (min-width: $breakpoint-md) {
-            &:hover {
-              color: $orange_bistre;
-            }
             &::after {
               content: "|";
               padding: 0px 8px;
+            }
+            &.disabled-line::after {
+              content: "";
             }
           }
         }
