@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 .card-wrap {
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   .card {
     position: relative;
     border-radius: 0;
@@ -31,14 +31,11 @@
     align-items: center;
     flex-direction: column;
     background-color: $white_smoke;
+    padding: 32px;
     .text {
       font-size: $fontsize-s;
-      padding: 32px;
-      margin: 0px;
+      margin-bottom: 32px;
     }
-  }
-  .button {
-    margin-bottom: 32px;
   }
 
   @media screen and (min-width: $breakpoint-lg) {
