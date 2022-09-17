@@ -1,6 +1,10 @@
 @use "../../variables" as *;
 .card-wrap {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    margin-bottom: 100px;
+  }
   .card {
     position: relative;
     border-radius: 0;
