@@ -10,18 +10,20 @@
     padding: 52px 20px;
   }
   & > h2 {
-    padding-bottom: 10px;
+    margin-bottom: 6px;
     font-size: $fontsize-l;
     color: $black;
     font-family: $fontfamily-mincho;
     @media screen and (min-width: $breakpoint-lg) {
       display: flex;
       font-size: $fontsize-xl;
+      margin-bottom: 10px;
     }
   }
   & > p {
     font-size: $fontsize-s;
     color: $black;
     font-family: $fontfamily-gothic;
+    margin: 0px;
   }
 }
