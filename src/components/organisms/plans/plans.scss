@@ -1,11 +1,16 @@
 @use "../../variables" as *;
 @use "../../molecules/message/message.scss" as *;
 .plans {
-  margin: 0px 24px 100px;
+  margin: 40px 97px 0px;
+  @media screen and (min-width: $breakpoint-md) {
+    margin: 40px 24px 52px;
+  }
   .message {
     padding: 0px 41px 32px;
+    line-height: 30px;
     h2 {
       color: $orange_bistre;
+      line-height: 28px;
     }
   }
   .plans-wrap {
