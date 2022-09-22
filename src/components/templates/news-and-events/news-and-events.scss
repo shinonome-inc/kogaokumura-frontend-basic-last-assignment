@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 .news-and-events {
-  padding: 65px 135px 101px;
-  @media (min-width: $breakpoint-md) {
-    padding: 56px 16px 94px;
+  margin: 50px 119px 85px;
+  @media screen and (min-width: $breakpoint-xl) {
+    margin: 40px 0px 78px;
   }
 }
