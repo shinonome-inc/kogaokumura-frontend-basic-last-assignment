@@ -8,13 +8,6 @@
     border: solid 1px $gray_gainsboro;
     border-bottom: none;
     margin-bottom: 14px;
-    @media screen and (min-width: $breakpoint-md) {
-      padding: 19px;
-      &:last-child {
-        padding-top: 18px;
-        padding-bottom: 17px;
-      }
-    }
     .news-click {
       &:hover {
         text-decoration: none;
@@ -25,7 +18,7 @@
         border-bottom: solid 1px $gray_gainsboro;
         .date {
           display: block;
-          line-height: 12px;
+          line-height: 1;
           font-size: $fontsize-xs;
           color: $gray_nobel;
           margin-bottom: 10px;
