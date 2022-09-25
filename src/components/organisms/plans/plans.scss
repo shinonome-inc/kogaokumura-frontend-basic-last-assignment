@@ -1,0 +1,35 @@
+@use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
+.plans {
+  .message {
+    line-height: 30px;
+    h2 {
+      color: $orange_bistre;
+      line-height: 28px;
+    }
+  }
+  .plans-wrap {
+    display: block;
+    @media screen and (min-width: $breakpoint-md) {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 30px;
+    }
+    .plan {
+      display: inline-block;
+      flex: 1;
+      width: 100%;
+      margin: 0px 0px 40px;
+      height: fit-content;
+      @media screen and (min-width: $breakpoint-md) {
+        width: auto;
+      }
+    }
+  }
+  .button {
+    margin: 0px auto 35px;
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: 100px;
+    }
+  }
+}
