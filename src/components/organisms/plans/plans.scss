@@ -1,10 +1,6 @@
 @use "../../variables" as *;
 @use "../../molecules/message/message.scss" as *;
 .plans {
-  margin: 0px 97px 0px;
-  @media screen and (min-width: $breakpoint-md) {
-    margin: 0px 8px 0px;
-  }
   .message {
     line-height: 30px;
     h2 {
