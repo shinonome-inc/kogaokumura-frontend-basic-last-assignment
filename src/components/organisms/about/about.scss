@@ -1,0 +1,32 @@
+@use "../../variables" as *;
+@use "../../molecules/message/message.scss" as *;
+.about {
+  background-color: $white;
+  .about-img-wrapper {
+    .about-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .message {
+    padding: 32px 24px;
+    background-color: $white_smoke;
+    line-height: 28px;
+    h2 {
+      line-height: 30px;
+      color: $orange_bistre;
+    }
+  }
+}
+@media (min-width: $breakpoint-lg) {
+  .about {
+    .message {
+      padding: 52px 20px;
+      line-height: 36px;
+      h2 {
+        line-height: 36px;
+      }
+    }
+  }
+}
