@@ -1,9 +1,5 @@
 @use "../../variables" as *;
 .news-and-events {
-  margin: 50px 119px 85px;
-  @media screen and (min-width: $breakpoint-md) {
-    margin: 40px 0px 78px;
-  }
   .events {
     .news-and-events-more {
       margin-top: 0px;
